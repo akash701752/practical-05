@@ -1,5 +1,5 @@
  // Task To print Datatypes and their size 
-
+#include<bits/stdc++.h>
 #include<iostream>
 #include<string>
 using namespace std ;
@@ -52,13 +52,23 @@ void widechar_func()
   cout<< sizeof(a) << endl ;
   cout<< sizeof(wchar_t) << endl ;
 }
+void bool_func()
+{
+  bool a = true ;
+  cout<< a << endl ;
+  cout<< sizeof(a) << endl ;
+  cout<< sizeof(bool) << endl ;
+}
 
 int main() //Task 
 {
-  char_func();
-  char_func();
-  char_func();
-  char_func();
-  
+  cout<<"char :"<<char_func() ;
+  cout<<"int :"<<int_func();
+  cout<<"float :"<<float_func();
+  cout<<"short :"<<short_func();
+  cout<<"long :"<<long_func();
+  cout<<"log double :"<<logdouble_func();
+  cout<<"wide char :"<<widechar_func();
+  cout<<"bool :"<<bool_func()
   return 0 ;
 }
